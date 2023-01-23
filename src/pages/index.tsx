@@ -89,7 +89,7 @@ export default function Home() {
                 <DotLoader size={20} color="white" />
               </div>
             ) : (
-              "Generador"
+              "Generar"
             )}
           </button>
 
