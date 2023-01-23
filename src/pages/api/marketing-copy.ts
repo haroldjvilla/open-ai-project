@@ -4,6 +4,7 @@ import { OpenAIApi } from "openai";
 import { configuration } from "../../../utils/constants";
 
 type Data = {
+  result: string
   input: string;
 };
 
@@ -29,5 +30,5 @@ export default async function handler(
 
   if (suggestion === undefined) throw new Error("No suggestion found");
 
-  res.status(200).json({ result: suggestion });
+  res.status(200).json({ input, result: suggestion });
 }
