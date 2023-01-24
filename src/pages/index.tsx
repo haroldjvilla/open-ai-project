@@ -48,13 +48,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="max-w-7xl mx-auto py-12">
+      <div className="max-w-7xl mx-auto py-12 p-12">
         <h2 className="text-2xl font-bold text-center pb-2">
           Generador de inspiración de marketing
         </h2>
         <h3 className="text-xl text-center pb-2">Nombre del negocio</h3>
         {/* Input fiel for marketing copy */}
-        <div className="flex flex-col gap-4 justify-center w-1/3 mx-auto">
+        <div className="flex flex-col gap-4 justify-center lg:w-1/3 mx-auto ">
           <div className="relative w-full">
             {/* Error message */}
             {error && (
